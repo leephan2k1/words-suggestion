@@ -7,15 +7,18 @@
     "license": "MIT",
     "scripts": {
         "dev": "nodemon src",
+        "start": "node src/index.js",
         "test": "echo \"Running tests... \n Done.\" && exit 0",
         "lint": "eslint .",
         "lint:fix": "eslint --fix ."
     },
     "pre-commit": "lint-staged .",
     "dependencies": {
-        "@fastify/cors": "^8.1.0",
+        "@fastify/cors": "^8.1.1",
+        "dotenv": "^16.0.3",
         "fastify": "^4.5.2",
-        "fastify-plugin": "^4.2.0"
+        "fastify-plugin": "^4.2.0",
+        "mongoose": "^6.7.1"
     },
     "devDependencies": {
         "eslint": "^8.22.0",
